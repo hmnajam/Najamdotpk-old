@@ -36,7 +36,7 @@ export default function Navbar() {
           <Button as={"a"} fontSize={"sm"} fontWeight={400} variant={"link"} href={"#"}
             display={{ base: "none", md: "inline-flex" }} // Hide on small screens (base), show on medium and larger screens (md)
             >
-            Sign In
+            Resume
           </Button>
           <Button
             as={"a"}
