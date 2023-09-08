@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <>
     <Navbar />
+    {/* <Hero /> */}
       <h1>Hello World</h1>
     </>
   )
