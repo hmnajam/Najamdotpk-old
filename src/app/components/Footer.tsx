@@ -97,7 +97,7 @@ export default function LargeWithNewsletter() {
             </Stack>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
+            <ListHeader>Najam.pk</ListHeader>
             <Box as="a" href={'#'}>
               About us
             </Box>
@@ -115,7 +115,7 @@ export default function LargeWithNewsletter() {
             </Box>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Support</ListHeader>
+            <ListHeader>Social</ListHeader>
             <Box as="a" href={'#'}>
               Help Center
             </Box>
