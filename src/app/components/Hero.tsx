@@ -42,7 +42,7 @@ export default function HeroSection() {
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
-            Let's make Money, <br />
+            Let&apos;s make Money, <br />
             <Text as={"span"} color={"purple.600"}>
               With the help of AI.
             </Text>
