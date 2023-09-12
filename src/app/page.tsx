@@ -1,20 +1,18 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
-// import HeroSection from "./components/Hero";
-import Hero2 from "./components/Hero2";
+import HeroSection from "./components/Hero";
 import Portfoliocard from "./components/card";
 import TestimonialCarousel2 from "./components/Testimoni2"
 import Footer from "./components/Footer";
 import LargeWithNewsletter from "./components/Footer";
-
+import Testi from "./components/Slider";
 import Slider from 'react-slick';
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      {/* <HeroSection /> */}
-      <Hero2 />
+      <HeroSection />
 
       {/* <main className="flex flex-wrap justify-center p-2">
         <div className="w-full">
@@ -54,7 +52,12 @@ export default function Home() {
 
 
 
-      {/* <TestimonialCarousel2 /> */}
+      <h1>Blog</h1>
+
+
+
+
+      <h1>About me</h1>
 
       <LargeWithNewsletter />
     </>

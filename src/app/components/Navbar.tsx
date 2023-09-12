@@ -3,8 +3,27 @@
 import { Box, Flex, Text, IconButton, Button, Stack, Collapse, Icon, Popover, PopoverTrigger, PopoverContent, useColorModeValue, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
+
+import {
+
+  
+  Avatar,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuDivider,
+  useColorMode,
+  Center,
+} from '@chakra-ui/react'
+import { MoonIcon, SunIcon } from '@chakra-ui/icons'
+
+
+
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
+  const { colorMode, toggleColorMode } = useColorMode()
+
 
   return (
     <Box>
@@ -32,6 +51,14 @@ export default function Navbar() {
           </Flex>
         </Flex>
 
+
+
+        <Button onClick={toggleColorMode}>
+                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              </Button>
+
+
+              
         <Stack flex={{ base: 1, md: 0 }} justify={"flex-end"} direction={"row"} spacing={6}>
           <Button as={"a"} fontSize={"sm"} fontWeight={400} variant={"link"} href={"#"}
             display={{ base: "none", md: "inline-flex" }} // Hide on small screens (base), show on medium and larger screens (md)
