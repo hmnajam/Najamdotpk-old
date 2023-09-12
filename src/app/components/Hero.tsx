@@ -48,7 +48,7 @@ export default function HeroSection() {
             </Text>
           </Heading>
           <Text color={"purple.800"}>
-            With skills in full-stack, machine learning, and blockchain, I'm
+            With skills in full-stack, machine learning, and blockchain, I&apos;m
             here to be your tech guide, simplifying the digital world and
             crafting solutions tailored to your needs.
           </Text>
