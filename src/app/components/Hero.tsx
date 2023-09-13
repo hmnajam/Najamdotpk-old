@@ -1,5 +1,7 @@
 "use client";
 
+import { FaFileDownload } from 'react-icons/fa'; // Import the FaFileDownload icon
+
 import Head from "next/head";
 import {
   Box,
@@ -48,9 +50,9 @@ export default function HeroSection() {
             </Text>
           </Heading>
           <Text color={"purple.800"}>
-            With skills in full-stack, machine learning, and blockchain, I&apos;m
-            here to be your tech guide, simplifying the digital world and
-            crafting solutions tailored to your needs.
+            With skills in full-stack, machine learning, and blockchain,
+            I&apos;m here to be your tech guide, simplifying the digital world
+            and crafting solutions tailored to your needs.
           </Text>
 
           <Stack
@@ -60,7 +62,9 @@ export default function HeroSection() {
             alignSelf={"center"}
             position={"relative"}
           >
-            <Button variant={"link"} colorScheme={"purple"} size={"sm"}>
+
+
+            {/* <Button variant={"link"} colorScheme={"purple"} size={"sm"}>
               <IconButton
                 aria-label="Resume"
                 icon={<DownloadIcon />}
@@ -68,6 +72,19 @@ export default function HeroSection() {
                 colorScheme={"purple"}
               />
               Resume
+            </Button> */}
+
+            <Button
+              // colorScheme={'green'}
+              bg={"purple.400"}
+              rounded={"full"}
+              px={6}
+              _hover={{
+                bg: "purple.400",
+              }}
+            >
+              
+              Resume <FaFileDownload />
             </Button>
             <Button
               // colorScheme={'green'}
@@ -80,6 +97,8 @@ export default function HeroSection() {
             >
               See Packages
             </Button>
+
+
 
             <Box>
               <Icon
