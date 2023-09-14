@@ -8,10 +8,12 @@ import author from './schemas/author'
 import certificates from './schemas/certificates'
 import projects from './schemas/projects'
 import skills from './schemas/skills'
+import testimonials from './schemas/testimonials'
+
 
 
 
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [post, author, category, blockContent, certificates, projects, skills],
+  types: [post, author, category, blockContent, certificates, projects, skills, testimonials],
 }

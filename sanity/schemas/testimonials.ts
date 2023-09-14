@@ -1,18 +1,29 @@
 import { defineField, defineType } from "sanity";
 
 export default defineType({
-  name: "projects",
-  title: "Projects",
+  name: "testimonials",
+  title: "Tetimonials",
   type: "document",
   fields: [
     {
-      name: "project",
-      title: "Porject Name",
+      name: "name",
+      title: "Name",
+      type: "string",
+    },
+    
+    {
+      name: "designation",
+      title: "Designation",
       type: "string",
     },
     {
-      name: "project_link",
-      title: "Project Link",
+      name: "organization",
+      title: "Organization",
+      type: "string",
+    },
+    {
+      name: "profiele_link",
+      title: "Profile Link",
       type: "url",
     },
     {
@@ -22,7 +33,7 @@ export default defineType({
     },
     {
       name: "block",
-      title: "Project Description",
+      title: "What they say",
       type: "array",
       of: [
         {
