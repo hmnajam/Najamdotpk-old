@@ -83,8 +83,8 @@ export default function HeroSection() {
                 bg: "purple.400",
               }}
             >
-              
-              Resume <FaFileDownload />
+              <FaFileDownload />
+              Resume 
             </Button>
             <Button
               // colorScheme={'green'}
