@@ -2,12 +2,32 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/Hero";
 import Portfoliocard from "./components/card";
 import LargeWithNewsletter from "./components/Footer";
+import Script from "next/script";
+import Router from "next/router";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <HeroSection />
+
+      <div className="container">
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+      </Script>
+    </div>
 
       {/* <main className="flex flex-wrap justify-center p-2">
         <div className="w-full">
