@@ -29,18 +29,6 @@ export default function Home() {
       </Script>
     </div>
 
-      {/* <main className="flex flex-wrap justify-center p-2">
-        <div className="w-full">
-          <h1 className="text-4xl font-bold text-center mt-10">Portfolio</h1>
-        </div>
-        <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-6">
-          <Portfoliocard />
-        </div>
-        <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-6">
-          <Portfoliocard />
-        </div>
-      </main> */}
-
       <main className="flex flex-wrap justify-center p-2">
         <div className="w-full">
           <h1 className="text-4xl font-bold mt-10">Portfolio</h1>
@@ -51,13 +39,6 @@ export default function Home() {
         <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-6">
           <Portfoliocard />
         </div>
-        {/* <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-6">
-    <Portfoliocard />
-  </div>
-  <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/
-  2 p-6">
-    <Portfoliocard />
-  </div> */}
 
         <div className="w-full">
           <h1 className="text-4xl font-bold mt-10">Testemonials</h1>
